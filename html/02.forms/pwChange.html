@@ -28,9 +28,11 @@
 	<script type="text/javascript">
 		
 		$("#btn").on("click", function(){
+			
 			var originPw = $("#originPw").val();
 			var newPw = $("#newPw").val();
 			var newPwCheck = $("#newPwCheck").val();
+			
 			if (originPw != newPw){
 				if(newPw == newPwCheck){
 					alert("비밀번호가 변경되었습니다.");
