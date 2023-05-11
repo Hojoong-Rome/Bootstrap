@@ -26,23 +26,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		var originPw = $("#originPw").val();
-		var newPw = $("#newPw").val();
-		var newPwCheck = $("#newPwCheck").val();
 		
 		$("#btn").on("click", function(){
+			var originPw = $("#originPw").val();
+			var newPw = $("#newPw").val();
+			var newPwCheck = $("#newPwCheck").val();
 			if (originPw != newPw){
 				if(newPw == newPwCheck){
-					alert("성공입니다.");
+					alert("비밀번호가 변경되었습니다.");
 				}else{
-					alert("실패입니다.");
+					alert("새 비밀번호가 일치하지 않습니다.");
 				}
-		}else{
-			alert("실패입니다.")}
-			console.log(originPw);
-			console.log(newPw);
-			console.log(newPwCheck);}
-		);
+			}else{
+				alert("같은 번호로는 변경할 수 없습니다.")}}
+			);
 		
 	</script>
   </body>
