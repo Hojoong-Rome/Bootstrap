@@ -215,7 +215,7 @@
 		<div id="btnCont">
 			<div class="btn_cont_1">
 				<button type="button" class="btn btn-danger"><i class="fa-solid fa-xmark"></i></button>
-				<button type="button" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
+				<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-regular fa-trash-can"></i></button>
 			</div>
 			<div class="btn_cont_2">
 				<button type="button" class="btn btn-success"><i class="fa-solid fa-file-excel"></i></button>
@@ -229,6 +229,22 @@
 		      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">11-111-11111</a></li>
 		      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">고양시 일산동구 마두동</a></li>
 		    </ul>
+		    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        Something
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 		    <p class="text-center text-body-secondary">&copy; 2024 MyCompany Inc, all right reserved</p>
 	  </footer>
 	</div>
