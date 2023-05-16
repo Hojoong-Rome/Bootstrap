@@ -37,3 +37,19 @@
 	display: flex;
 	justify-content: space-between;
 }
+.row{
+	margin-bottom: 5px;
+}
+#mainForm{
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	padding: 5px 5px 0 5px;
+}
+
+.sub_container01{
+	width: 90%;
+	margin-top: 20px;
+}
+.sub_form_cont{
+	width: 95%;
+}
