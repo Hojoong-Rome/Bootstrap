@@ -53,3 +53,13 @@
 .sub_form_cont{
 	width: 95%;
 }
+.subBtnCont{
+	display: flex;
+	justify-content: space-between;
+}
+.headerInput{
+	width: 400px;
+	float: right;
+	display: flex;
+	justify-content: space-between;
+}

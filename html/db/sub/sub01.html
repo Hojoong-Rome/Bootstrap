@@ -23,14 +23,18 @@
           <li><a href="#" class="nav-link px-2 text-white">시스템관리</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
+        <div class="headerInput">
+	        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+	          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+	        </form>
+	
+	        <select class="form-select" aria-label="Default select example">
+			  <option selected>언어</option>
+			  <option value="1">한국어</option>
+			  <option value="2">English</option>
+			  <option value="3">日本語</option>
+			</select>
+		</div>
       </div>
     </div>
   </header>
@@ -147,6 +151,10 @@
 				</div>
 				<div class="col">
 				</div>
+			</div>
+			<div class="subBtnCont">
+				<button type="button" class="btn btn-secondary"><i class="fa-solid fa-bars"></i></button>
+				<button type="button" class="btn btn-success"><i class="fa-solid fa-bookmark"></i></button>
 			</div>
 		</div>
 		<footer class="py-3 my-4">
