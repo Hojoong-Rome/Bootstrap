@@ -14,7 +14,7 @@
 	<header class="p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <div><a href="#" id="main_logo">MAIN</a></div>
+      <div><a href="../index.html" id="main_logo">MAIN</a></div>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="#" class="nav-link px-2 text-white">회원관리</a></li>
           <li><a href="#" class="nav-link px-2 text-white">서비스관리</a></li>
@@ -96,66 +96,84 @@
 	<div class="sub_container01">
 		<h2>국가코드 관리</h2>
 		<div class="sub_form_cont">
-			<div class="row">
-				<div class="col">
-				  	<label for="seqInput" class="form-label">Seq</label>
-				    <input type="text" class="form-control" placeholder="자동생성" id="seqInput" disabled>
+			<form class="needs-validation" novalidate>
+				<div class="row">
+					<div class="col">
+					  	<label for="seqInput" class="form-label">Seq</label>
+					    <input type="text" class="form-control" placeholder="자동생성" id="seqInput" disabled>
+					</div>
+					<div class="col">
+					</div>
 				</div>
-				<div class="col">
+				<div class="row">
+					<div class="col">
+					  	<label for="countInput" class="form-label">국가 이름</label>
+					    <input type="text" class="form-control" id="countInput" required>
+					    <div class="invalid-feedback">
+					      국가 이름을 입력하세요.
+					    </div>
+					</div>
+					<div class="col">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-				  	<label for="countInput" class="form-label">국가 이름</label>
-				    <input type="text" class="form-control" id="countInput">
+				<div class="row">
+					<div class="col">
+					  	<label for="korInput" class="form-label">국가 이름(한글)</label>
+					    <input type="text" class="form-control" id="korInput" required>
+					    <div class="invalid-feedback">
+					      국가 이름을 입력하세요.
+					    </div>
+					</div>
+					<div class="col">
+					  	<label for="engInput" class="form-label">국가 이름(영문)</label>
+					    <input type="text" class="form-control" id="engInput" placeholder="영대소문자" required>
+					    <div class="invalid-feedback">
+					      국가 이름을 입력하세요.
+					    </div>
+					</div>
 				</div>
-				<div class="col">
+				<div class="row">
+					<div class="col">
+					  	<label for="code2Input" class="form-label">국가 코드(2자리)</label>
+					    <input type="text" class="form-control" id="code2Input" placeholder="영대소문자" required>
+					    <div class="invalid-feedback">
+					      국가 코드를 입력하세요.
+					    </div>
+					</div>
+					<div class="col">
+					  	<label for="code3Input" class="form-label">국가 코드(3자리)</label>
+					    <input type="text" class="form-control" id="code3Input" placeholder="영대소문자" required>
+					    <div class="invalid-feedback">
+					      국가 코드를 입력하세요.
+					    </div>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-				  	<label for="korInput" class="form-label">국가 이름(한글)</label>
-				    <input type="text" class="form-control" id="korInput">
+				<div class="row">
+					<div class="col">
+						<label for="yesOrNo" class="form-label">사용여부</label>
+						<select class="form-select" aria-label="Default select example" id="yesOrNo">
+					  	  <option selected>Y</option>
+					  	  <option>N</option>
+					    </select>
+					</div>
+					<div class="col">
+					  	<label for="numberInput" class="form-label">순서</label>
+					    <input type="number" class="form-control" id="numberInput">
+					</div>
 				</div>
-				<div class="col">
-				  	<label for="engInput" class="form-label">국가 이름(영문)</label>
-				    <input type="text" class="form-control" id="engInput" placeholder="영대소문자">
+				<div class="row">
+					<div class="col">
+					  	<label for="floatingTextarea">설명</label>
+						<textarea class="form-control" id="floatingTextarea"></textarea>
+					</div>
+					<div class="col">
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-				  	<label for="code2Input" class="form-label">국가 코드(2자리)</label>
-				    <input type="text" class="form-control" id="code2Input" placeholder="영대소문자">
+				<div class="subBtnCont">
+					<a href="../index.html"><button type="button" class="btn btn-secondary"><i class="fa-solid fa-bars"></i></button></a>
+					<button type="submit" class="btn btn-success"><i class="fa-solid fa-bookmark"></i></button>
 				</div>
-				<div class="col">
-				  	<label for="code3Input" class="form-label">국가 코드(3자리)</label>
-				    <input type="text" class="form-control" id="code3Input" placeholder="영대소문자">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<label for="yesOrNo" class="form-label">사용여부</label>
-					<select class="form-select" aria-label="Default select example" id="yesOrNo">
-				  	  <option selected>Y</option>
-				    </select>
-				</div>
-				<div class="col">
-				  	<label for="numberInput" class="form-label">순서</label>
-				    <input type="text" class="form-control" id="numberInput">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-				  	<label for="floatingTextarea">설명</label>
-					<textarea class="form-control" id="floatingTextarea"></textarea>
-				</div>
-				<div class="col">
-				</div>
-			</div>
-			<div class="subBtnCont">
-				<button type="button" class="btn btn-secondary"><i class="fa-solid fa-bars"></i></button>
-				<button type="button" class="btn btn-success"><i class="fa-solid fa-bookmark"></i></button>
-			</div>
+			</form>
 		</div>
 		<footer class="py-3 my-4">
 		    <ul class="nav justify-content-center mb-3">	
@@ -171,5 +189,26 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="../js/sidebars.js"></script>
+	<script type="text/javascript">
+	// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(() => {
+	  'use strict'
+
+	  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	  const forms = document.querySelectorAll('.needs-validation')
+
+	  // Loop over them and prevent submission
+	  Array.from(forms).forEach(form => {
+	    form.addEventListener('submit', event => {
+	      if (!form.checkValidity()) {
+	        event.preventDefault()
+	        event.stopPropagation()
+	      }
+
+	      form.classList.add('was-validated')
+	    }, false)
+	  })
+	})()
+	</script>
 	</body>
 </html>
